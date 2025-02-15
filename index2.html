@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> هکینگ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1> هکینگshahab </h1>
+
+        <div class="password-section">
+            <h2>ورود پسورد</h2>
+            <input type="text" id="password-input" placeholder="پسورد را وارد کنید">
+            <button onclick="checkPassword()">ورود</button>
+            <div id="password-result"></div>
+        </div>
+
+        <div class="ddos-section">
+            <h2>حمله DDOS</h2>
+            <button onclick="startDDOS()">شروع حمله</button>
+            <pre id="console-output"></pre>
+        </div>
+
+        <div class="encryption-section">
+            <h2>رمزنگاری و رمزگشایی</h2>
+            <input type="text" id="encryption-input" placeholder="پیام را وارد کنید">
+            <button onclick="processEncryption()">رمزنگاری</button>
+            <div id="encryption-result"></div>
+        </div>
+
+        <div class="traffic-section">
+            <h2>آمار ترافیک شبکه</h2>
+            <canvas id="traffic-chart" width="400" height="200"></canvas>
+        </div>
+
+        <div class="http-request-section">
+            <h2>شبیه‌سازی درخواست HTTP</h2>
+            <button onclick="simulateHttpRequest('http://example.com')">ارسال درخواست</button>
+        </div>
+
+        <div class="security-alerts">
+            <button onclick="showSecurityAlert('هشدار! سیستم در معرض حمله قرار دارد!')">نمایش هشدار امنیتی</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
